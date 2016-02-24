@@ -1,0 +1,196 @@
+/*small laptop*/
+
+@media screen and (min-width: 613px) {
+  .col1, .col2 {
+    width: 49%;
+    height: 100vh;
+    margin: 0;
+    display: block;
+  }
+
+  .col1 {
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 4vh 10vw 7vh 7vw;
+    line-height: 30px;
+  }
+
+  .col1 h3 {
+    font-size: 26px;
+  }
+
+  .col2 {
+    float: right;
+    background-color: $black;
+    color: $white;
+    padding-top: 3vh;
+    padding-left: 7vw;
+    padding-right: 6vw;
+    font-size: 14px;
+  }
+
+  .col2 img {
+    display:block;
+    float:left;
+    width: 60%;
+    margin-right: 200px;
+    padding-bottom: 3vh;
+    max-width: 289px;;
+  }
+
+  .col2 .inverse {
+    display:none;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .fa-asterisk {
+    display: none;
+  }
+
+  .featuredProject {
+    display:none;
+  }
+
+  .footer {
+    margin: 0;
+    display: block;
+    position: absolute;
+    margin-top: 57vh;
+    margin-left: 65px;
+  }
+
+  .footer h3{
+    color: $white;
+    font-weight: lighter;
+  }
+
+  .footer p{
+    color: $white;
+  }
+
+  html, body {
+    margin: 0;
+    background-color: $white;
+  }
+
+  .main {
+    height: 70vh;
+    left:0px;
+    top:0px;
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    margin-bottom: 1.8%;
+  }
+
+  .nav {
+    background-color: $white;
+    opacity: 0.95;
+    width: 250px;
+    height: 210px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: fixed;
+    z-index: 9999;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .nav a {
+    color: $black;
+  }
+
+  .nav h3 a:hover {
+    color: $red;
+  }
+
+  .nav li {
+    display:block;
+    padding-right: 2vw;
+    width: 60%;
+    color: $black;
+    letter-spacing: .3em;
+    padding-bottom: 1.5em;
+  }
+
+  .nav ul {
+    background-color: $white;
+    opacity: 0.95;
+    font-size: 9px;
+    color: $white;
+  }
+
+li a:hover {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
+/*larger screen*/
+
+@media screen and (min-width: 1280px) {
+
+  body {
+    background-color: $white;
+  }
+
+  .col1, .col2 {
+    float: right;
+    height: 49vh;
+    width: 27%;
+    padding: 3.5%;
+  }
+
+  .col1 {
+    margin: 0 0 1vh 0;
+    padding-top: 6vh;
+  }
+
+  .col1 h3 {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: .15em;
+    font-weight: bold;
+  }
+
+  .col1 p {
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .col2 {
+    margin: 1vh 0 0 0;
+    bottom: 0;
+    padding-top: 8vh;
+  }
+
+  .col2 img {
+    float:left;
+    width: 70%;
+    padding-bottom: 4vh;
+    padding-top: 0vh;
+  }
+
+  .col2 p {
+    letter-spacing: .75px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 83vh;
+  }
+
+  .main {
+    float: left;
+    width: 72%;
+    height: 100vh;
+    margin-right: .70vw;
+    margin-bottom: 0;
+}
+}

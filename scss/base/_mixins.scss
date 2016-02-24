@@ -1,0 +1,6 @@
+@mixin font-face ($size, $l-space:null, $weight:null, $color:null){
+  font size: $size;
+  letter-spacing: $l-space;
+  font-weight: $weight;
+  color: $color;
+}

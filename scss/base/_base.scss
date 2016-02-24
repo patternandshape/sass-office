@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:hover {
+  color: $red;
+}
+
+
+body {
+  color: $white;
+  font-family: $stack-josefin;
+  background-color: $black;
+}
+
+li a {
+  color: $white;
+  font-weight: bold;
+
+  &:hover {
+    color: $red;
+    font-weight: bold;
+}
+}
+
+ul a:hover {
+  color: $blue;
+}

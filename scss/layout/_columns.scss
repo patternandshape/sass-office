@@ -1,0 +1,44 @@
+.col1 {
+  background-color: $red;
+  height: 6.5vh;
+
+  a {
+    color: $white;
+    &:hover {
+    color: $blue;
+    }
+  h3 {
+    @include font-face(12px, $l-space: .1em, $color: $white);
+    padding-left: 8%;
+    }
+    p {
+      @include font-face(12px, $weight: bold, $color: $black);
+      padding-left: 8%;
+      padding-top: 4%;
+      margin-bottom: -1%;
+
+    &:hover {
+      color: $blue;
+    }
+    }
+  }
+}
+
+
+.col2 {
+  @include font-face(14px, $color: $black);
+  margin: 11% 0 5% 0;
+  background-color: $white;
+  height: 25vh;
+  padding: 4% 8% 7% 10%;
+
+  img {
+    display: none;
+  }
+
+  .inverse {
+    width: 60%;
+    display: block;
+    margin: 0.5vh auto;
+  }
+}

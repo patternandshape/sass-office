@@ -1,0 +1,13 @@
+.footer {
+  margin: 5% 0;
+
+  h3 {
+    @include font-face(16px, $l-space: .3em, $weight: lighter);
+    font-family: $stack-block;
+    margin-bottom: -.3em;
+  }
+
+  p {
+    @include font-face(12px, $l-space: .1em);
+  }
+}
