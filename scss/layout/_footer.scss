@@ -27,4 +27,8 @@
     margin-top: 57vh;
     margin-left: 65px;
   }
+
+  @media #{$brk-large} {
+    margin-top: 83vh;
+  }
 }

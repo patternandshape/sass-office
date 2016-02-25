@@ -10,7 +10,6 @@
   width: device-width;
 }
 
-
 a {
   text-decoration: none;
   color: $black;
@@ -20,7 +19,6 @@ a {
 }
 }
 
-
 body {
   color: $white;
   font-family: $stack-josefin;
@@ -28,6 +26,10 @@ body {
 
   @media #{$brk-small} {
     margin: 0;
+    background-color: $white;
+  }
+
+  @media #{$brk-large} {
     background-color: $white;
   }
 }

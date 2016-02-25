@@ -3,17 +3,25 @@
   height: 6.5vh;
 
   a {
-    color: $black;
+    color: $white;
     &:hover {
     color: $blue;
     }
   }
+
   h3 {
     @include font-face(12px, $l-space: .1em, $color: $white);
     padding-left: 8%;
 
     @media #{$brk-small} {
       font-size: 26px;
+    }
+
+    @media #{$brk-large} {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: .15em;
+      font-weight: bold;
     }
     }
 
@@ -25,10 +33,15 @@
     &:hover {
       color: $blue;
     }
+
+    @media #{$brk-large} {
+        font-size: 14px;
+        font-weight: 800;
+      }
     }
 
     @media #{$brk-small} {
-      @extend %float-left;
+      float: left;
       text-align: center;
       letter-spacing: 1px;
       padding: 4vh 10vw 7vh 7vw;
@@ -37,27 +50,41 @@
       height: 100vh;
       margin: 0;
       display: block;
-
     }
-}
 
-.col2 {
-  @include font-face(14px, $color: $black);
-  margin: 11% 0 5% 0;
-  background-color: $white;
-  height: 25vh;
-  padding: 4% 8% 7% 10%;
+    @media #{$brk-large} {
+      float:right;
+      height: 49vh;
+      width: 27%;
+      padding: 3.5%;
+      @include padding (6vh);
+      margin: 0 0 1vh 0;
+    }
+  }
+
+  .col2 {
+    @include font-face(14px, $color: $black);
+    margin: 11% 0 5% 0;
+    background-color: $white;
+    height: 25vh;
+    padding: 4% 8% 7% 10%;
 
   img {
     display: none;
 
     @media #{$brk-small} {
       display:block;
-      @extend %float-left;
+      float: left;
       width: 60%;
       margin-right: 200px;
       padding-bottom: 3vh;
       max-width: 289px;
+    }
+
+    @media #{$brk-large} {
+      float: left;
+      @include padding (0vh, $padding-bottom: 4vh);
+      width: 70%;
     }
   }
 
@@ -65,14 +92,14 @@
     width: 60%;
     display: block;
     margin: 0.5vh auto;
-    
+
     @media #{$brk-small} {
       display:none;
     }
   }
 
   @media #{$brk-small} {
-    @extend %float-right;
+    float:right;
     @include padding (3vh, $padding-right: 6vw, $padding-left: 7vw);
     background-color: $black;
     color: $white;
@@ -81,5 +108,23 @@
     height: 100vh;
     margin: 0;
     display: block;
+  }
+
+  @media #{$brk-large} {
+    float:right;
+    height: 49vh;
+    width: 27%;
+    padding: 3.5%;
+    @include padding (8vh);
+    margin: 1vh 0 0 0;
+    bottom: 0;
+  }
+
+  p {
+    @media #{$brk-large} {
+      letter-spacing: .75px;
+      line-height: 20px;
+      font-size: 16px;
+    }
   }
 }
