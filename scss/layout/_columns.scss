@@ -3,26 +3,43 @@
   height: 6.5vh;
 
   a {
-    color: $white;
+    color: $black;
     &:hover {
     color: $blue;
     }
+  }
   h3 {
     @include font-face(12px, $l-space: .1em, $color: $white);
     padding-left: 8%;
+
+    @media #{$brk-small} {
+      font-size: 26px;
     }
-    p {
-      @include font-face(12px, $weight: bold, $color: $black);
-      @include padding (4%, $padding-left: 8%);
-      margin-bottom: -1%;
+    }
+
+  p {
+    @include font-face(12px, $weight: bold, $color: $black);
+    @include padding (4%, $padding-left: 8%);
+    margin-bottom: -1%;
 
     &:hover {
       color: $blue;
     }
     }
-  }
-}
 
+    @media #{$brk-small} {
+      @extend %float-left;
+      text-align: center;
+      letter-spacing: 1px;
+      padding: 4vh 10vw 7vh 7vw;
+      line-height: 30px;
+      width: 49%;
+      height: 100vh;
+      margin: 0;
+      display: block;
+
+    }
+}
 
 .col2 {
   @include font-face(14px, $color: $black);
@@ -33,11 +50,36 @@
 
   img {
     display: none;
+
+    @media #{$brk-small} {
+      display:block;
+      @extend %float-left;
+      width: 60%;
+      margin-right: 200px;
+      padding-bottom: 3vh;
+      max-width: 289px;
+    }
   }
 
   .inverse {
     width: 60%;
     display: block;
     margin: 0.5vh auto;
+    
+    @media #{$brk-small} {
+      display:none;
+    }
+  }
+
+  @media #{$brk-small} {
+    @extend %float-right;
+    @include padding (3vh, $padding-right: 6vw, $padding-left: 7vw);
+    background-color: $black;
+    color: $white;
+    font-size: 14px;
+    width: 49%;
+    height: 100vh;
+    margin: 0;
+    display: block;
   }
 }

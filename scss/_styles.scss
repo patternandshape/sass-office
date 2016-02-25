@@ -1,111 +1,13 @@
 /*small laptop*/
 
 @media screen and (min-width: 613px) {
-  .col1, .col2 {
-    width: 49%;
-    height: 100vh;
-    margin: 0;
-    display: block;
-  }
 
-  .col1 {
-    @extend %float-left;
-    text-align: center;
-    letter-spacing: 1px;
-    padding: 4vh 10vw 7vh 7vw;
-    line-height: 30px;
-  }
 
-  .col1 h3 {
-    font-size: 26px;
-  }
-
-  .col2 {
-    @extend %float-right;
-    @include padding (3vh, $padding-right: 6vw, $padding-left: 7vw);
-    background-color: $black;
-    color: $white;
-    font-size: 14px;
-  }
-
-  .col2 img {
-    display:block;
-    @extend %float-left;
-    width: 60%;
-    margin-right: 200px;
-    padding-bottom: 3vh;
-    max-width: 289px;;
-  }
-
-  .col2 .inverse {
-    display:none;
-  }
-
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .fa-asterisk {
-    display: none;
-  }
-
-  .featuredProject {
-    display:none;
-  }
-
-  .footer {
-    margin: 0;
-    display: block;
-    position: absolute;
-    margin-top: 57vh;
-    margin-left: 65px;
-  }
-
-  .footer h3{
-    color: $white;
-    font-weight: lighter;
-  }
-
-  .footer p{
-    color: $white;
-  }
-
-  html, body {
+  html {
     margin: 0;
     background-color: $white;
   }
 
-  .main {
-    height: 70vh;
-    left:0px;
-    top:0px;
-    position: relative;
-    right: 0;
-    margin: 0 auto;
-    margin-bottom: 1.8%;
-  }
-
-  .nav {
-    background-color: $white;
-    opacity: 0.95;
-    width: 250px;
-    height: 210px;
-    margin-top: 50px;
-    margin-left: 50px;
-    position: fixed;
-    z-index: 9999;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .nav a {
-    color: $black;
-  }
-
-  .nav h3 a:hover {
-    color: $red;
-  }
 
   .nav li {
     display:block;
