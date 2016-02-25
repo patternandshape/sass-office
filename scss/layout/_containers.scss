@@ -8,10 +8,9 @@
 
   h3 {
     @include font-face(18px, $l-space: .2em, $weight: lighter);
+    @include padding (1vh, $padding-left: 8%);
     font-family: $stack-block;
     height: 2.75vh;
-    padding-left: 8%;
-    padding-top: 1vh;
   }
   li {
     display: inline;
@@ -20,12 +19,11 @@
   }
   ul {
     @include font-face(9px, $l-space: .1em, $weight: 200, $color: $white);
+    @include padding (1.5vh, $padding-left: 8%);
     list-style: none;
     background-color: $blue;
     opacity: 0.9;
     height: 4vh;
-    padding-left: 8%;
-    padding-top: 1.5vh;
   }
 }
 
@@ -58,8 +56,7 @@
     }
     p{
       @include font-face(12px, $weight: bold, $color: $black);
-      padding-left: 8%;
-      padding-top: 4%;
+      @include padding (4%, $padding-left: 8%);
       margin-bottom: -1%;
 
       &:hover {

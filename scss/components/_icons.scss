@@ -1,6 +1,6 @@
 .fa-asterisk {
+  @extend %float-left;
   @include font-face(10px, $weight:lighter, $color:$black);
-  float: left;
   padding-left: 3%;
   margin-top: 7%;
 

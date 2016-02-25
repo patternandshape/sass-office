@@ -9,7 +9,7 @@
   }
 
   .col1 {
-    float: left;
+    @extend %float-left;
     text-align: center;
     letter-spacing: 1px;
     padding: 4vh 10vw 7vh 7vw;
@@ -21,18 +21,16 @@
   }
 
   .col2 {
-    float: right;
+    @extend %float-right;
+    @include padding (3vh, $padding-right: 6vw, $padding-left: 7vw);
     background-color: $black;
     color: $white;
-    padding-top: 3vh;
-    padding-left: 7vw;
-    padding-right: 6vw;
     font-size: 14px;
   }
 
   .col2 img {
     display:block;
-    float:left;
+    @extend %float-left;
     width: 60%;
     margin-right: 200px;
     padding-bottom: 3vh;
@@ -140,15 +138,15 @@ li a:hover {
   }
 
   .col1, .col2 {
-    float: right;
+    @extend %float-right;
     height: 49vh;
     width: 27%;
     padding: 3.5%;
   }
 
   .col1 {
+    @include padding (6vh);
     margin: 0 0 1vh 0;
-    padding-top: 6vh;
   }
 
   .col1 h3 {
@@ -164,16 +162,15 @@ li a:hover {
   }
 
   .col2 {
+    @include padding (8vh);
     margin: 1vh 0 0 0;
     bottom: 0;
-    padding-top: 8vh;
   }
 
   .col2 img {
-    float:left;
+    @extend %float-left;
+    @include padding (0vh, $padding-bottom: 4vh);
     width: 70%;
-    padding-bottom: 4vh;
-    padding-top: 0vh;
   }
 
   .col2 p {
@@ -187,7 +184,7 @@ li a:hover {
   }
 
   .main {
-    float: left;
+    @extend %float-left;
     width: 72%;
     height: 100vh;
     margin-right: .70vw;
