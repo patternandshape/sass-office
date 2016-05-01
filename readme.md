@@ -2,7 +2,7 @@
 
 ##### A responsive website for the Eames Office based on the design of Andersson-Wise's current website...now with SASS!
 
-February 24, 2016
+February 25, 2016
 
 ##### By Molly Curtin & Sara Wagner
 
